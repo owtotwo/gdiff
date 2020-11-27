@@ -1,0 +1,18 @@
+[package]
+name = "gdiff"
+version = "0.0.1"
+authors = ["owtotwo <owtotwo@163.com>"]
+license = "LGPL-3.0-only"
+description = "(WIP) PlaceHolder..."
+edition = "2018"
+
+
+[dependencies]
+clap = "2.33.3"
+anyhow = "1.0.34"
+tui = { version = "0.13.0", features = ["crossterm"], default_features = false }
+crossterm = "0.18.2"
+
+
+[profile.release]
+lto = true
